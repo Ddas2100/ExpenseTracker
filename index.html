@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker Using JavaScript</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Monthly Expense Tracker</h1>
+    </header>
+
+    <section class="container">
+        <form id="my-form"> 
+          <h3>Add Monthly Expenses</h3> 
+          <div class="msg"></div>
+          <div>
+            <label for="expenses">Expense Amount:</label>
+            <input type="number" id="expenses">
+          </div>
+          <div>
+            <label for="details">Expenses Details:</label>
+            <input type="text" id="details">
+          </div>
+          <div>
+              <label for="category"> Expense Type: </label>
+              <select name="category" id="category">
+                <option value="movies"> Movies</option>
+                <option value="shopping"> Shopping</option>
+                <option value="rent"> Rent</option>
+                <option value="food"> Food</option>
+                <option value="electricity"> Electricity</option>
+              </select>
+          </div>
+          <input class="btn" type="submit" value="Add Expenses">
+        </form>
+  
+        <ul id="users"></ul>
+  
+        <ul class="items"> </ul>
+      </section>
+      
+  
+      <script src="script.js"></script>
+</body>
+</html>
